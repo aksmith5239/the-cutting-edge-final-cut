@@ -7,7 +7,7 @@
 
 Description
 --
->A scheduling system for hair stylists<br>
+>A scheduling system for hair stylists that allows a user to choose a style, book the style and send a message for a stylist to accept and book the appointment. <br>
 <img src="cuttingEdgeFinalCut.gif" height="300px" width="500px" />
 ### Table of Contents
 [Installation](#install)<br>
