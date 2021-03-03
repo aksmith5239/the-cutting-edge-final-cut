@@ -4,7 +4,7 @@ import { useMutation } from '@apollo/react-hooks';
 import Auth from "../utils/auth";
 import { ADD_USER } from "../utils/mutations";
 import { Form, Card, Row, Col } from "react-bootstrap";
-import heroImage from "../assets/hero-image.jpeg";
+// import heroImage from "../assets/hero-image.jpeg";
 
 function Signup(props) {
   const [formState, setFormState] = useState({ email: '', password: '' });
@@ -39,25 +39,24 @@ function Signup(props) {
   };
 
   return (
-    <div className="container-flex">
+    <div className="container my-1">
       <Row>
         <Col lg={true}>
       <Link to="/login">
         ← Go to Login
       </Link>
       
+      
+      
       <Card className='lg-card'>
-        <Card.Img
-        variant="top"
-        src={heroImage} className="landingImage" alt="scissors and combs" />
-        <Card.ImgOverlay >
+        <Card.Header>
         <h2><strong>Signup</strong></h2>
-        
-          
+        </Card.Header>
+         
           <Card.Body>
         <form onSubmit={handleFormSubmit}>
-        <Form.Group >
-        <div className="flex-row space-between my-2 'text-center">
+        <Form.Group>
+        <div className="flex-row space-between my-2">
            <div className="error">{error}</div>
         </div>
         
@@ -116,8 +115,12 @@ function Signup(props) {
         </Form.Group>
       </form>
       </Card.Body>
-      </Card.ImgOverlay>
+      <div>
+      <img src="../images/hero-image.jpeg" className='heroImage' alt='scissors and comb' />
+      </div>
       </Card>
+      
+      
       </Col>
       </Row>
     </div>

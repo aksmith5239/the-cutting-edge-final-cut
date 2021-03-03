@@ -8,11 +8,8 @@ function Landing() {
   return (
     <div>
       <Card className='landingCard'>
-        <Card.Img
-        variant="top"
-        src={landingImage} className='landingImage' alt='salon' 
-        />
-        <Card.ImgOverlay className='landingOverlay'>
+        
+       
           <Card.Title ><h1 className='landingTitle text-primary'>Welcome to the Cutting Edge</h1>
           <h2 className='text-dark '><em>Your new style is a click away!</em></h2>
           <Link to='/signup'>
@@ -22,7 +19,10 @@ function Landing() {
           <Button className='btn btn-outline-warning btn-lg'>Login</Button>
           </Link>
           </Card.Title>
-        </Card.ImgOverlay>
+          <Card.Img
+        variant="top"
+        src="../images/salon.jpg" className='heroImage' alt='salon' />
+       
       </Card>
       
      

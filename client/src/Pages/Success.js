@@ -41,11 +41,8 @@ function Success() {
         <div>
      <Jumbotron>   
       <Card className='landingCard'>
-        <Card.Img
-        variant="top"
-        src={landingImage} className='landingImage' alt='salon' 
-        />
-        <Card.ImgOverlay className='landingOverlay'>
+       
+        
           <Card.Title ><h1 className='landingTitle text-primary'>Success!</h1>
           <h2 className='text-dark '><em>Thank you for your purchase!</em></h2>
           <h2 className='text-dark '><em>Click the link below to submit your order to your stylist. Your new stylist will contact you with your appointment details.</em></h2>
@@ -54,7 +51,10 @@ function Success() {
         
           
           </Card.Title>
-        </Card.ImgOverlay>
+          <Card.Img
+        variant="top"
+        src="../images/salon.jpg" className='heroImage' alt='salon' />
+        
       </Card>
       </Jumbotron>  
      

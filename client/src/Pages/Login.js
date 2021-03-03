@@ -30,7 +30,7 @@ function Login(props) {
   };
 
   return (
-    <div className="container-flex">
+    <div className="container my-1">
      <Row>
        <Col>
 
@@ -39,12 +39,9 @@ function Login(props) {
       </Link>
      
         <Card className='lg-card'>
-        <Card.Img
-        variant="top"
-        src={heroImage} className="landingImage" alt="scissors and combs" />
-         <Card.ImgOverlay>
-        <h2><strong>Login</strong></h2>
-       
+        <Card.Header>  
+      <h2><strong>Login</strong></h2>
+        </Card.Header>
         
       <form onSubmit={handleFormSubmit}>
       <Form.Group>
@@ -84,14 +81,14 @@ function Login(props) {
         </div>
         </Form.Group>
       </form>
-      
-      </Card.ImgOverlay>
+      <div>
+      <img src="../images/hero-image.jpeg" className='heroImage' alt='scissors and comb' />
+      </div>
+ 
       </Card>
       </Col>
      </Row>
     </div>
   );
 }
-
-
 export default Login;
